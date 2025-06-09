@@ -1,0 +1,902 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+
+<meta charset="utf-8" />
+<meta name="generator" content="pandoc" />
+<meta http-equiv="X-UA-Compatible" content="IE=EDGE" />
+
+
+
+
+<title>生物科学実験II、生物学実験II</title>
+
+<script src="FY2025ShellExp_files/header-attrs-2.27/header-attrs.js"></script>
+<script src="FY2025ShellExp_files/jquery-3.6.0/jquery-3.6.0.min.js"></script>
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<link href="FY2025ShellExp_files/bootstrap-3.3.5/css/bootstrap.min.css" rel="stylesheet" />
+<script src="FY2025ShellExp_files/bootstrap-3.3.5/js/bootstrap.min.js"></script>
+<script src="FY2025ShellExp_files/bootstrap-3.3.5/shim/html5shiv.min.js"></script>
+<script src="FY2025ShellExp_files/bootstrap-3.3.5/shim/respond.min.js"></script>
+<style>h1 {font-size: 34px;}
+       h1.title {font-size: 38px;}
+       h2 {font-size: 30px;}
+       h3 {font-size: 24px;}
+       h4 {font-size: 18px;}
+       h5 {font-size: 16px;}
+       h6 {font-size: 12px;}
+       code {color: inherit; background-color: rgba(0, 0, 0, 0.04);}
+       pre:not([class]) { background-color: white }</style>
+<script src="FY2025ShellExp_files/navigation-1.1/tabsets.js"></script>
+<link href="FY2025ShellExp_files/highlightjs-9.12.0/default.css" rel="stylesheet" />
+<script src="FY2025ShellExp_files/highlightjs-9.12.0/highlight.js"></script>
+
+<style type="text/css">
+  code{white-space: pre-wrap;}
+  span.smallcaps{font-variant: small-caps;}
+  span.underline{text-decoration: underline;}
+  div.column{display: inline-block; vertical-align: top; width: 50%;}
+  div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+  ul.task-list{list-style: none;}
+    </style>
+
+<style type="text/css">code{white-space: pre;}</style>
+<script type="text/javascript">
+if (window.hljs) {
+  hljs.configure({languages: []});
+  hljs.initHighlightingOnLoad();
+  if (document.readyState && document.readyState === "complete") {
+    window.setTimeout(function() { hljs.initHighlighting(); }, 0);
+  }
+}
+</script>
+
+
+
+
+
+
+
+
+
+<style type = "text/css">
+.main-container {
+  max-width: 940px;
+  margin-left: auto;
+  margin-right: auto;
+}
+img {
+  max-width:100%;
+}
+.tabbed-pane {
+  padding-top: 12px;
+}
+.html-widget {
+  margin-bottom: 20px;
+}
+button.code-folding-btn:focus {
+  outline: none;
+}
+summary {
+  display: list-item;
+}
+details > summary > p:only-child {
+  display: inline;
+}
+pre code {
+  padding: 0;
+}
+</style>
+
+
+
+<!-- tabsets -->
+
+<style type="text/css">
+.tabset-dropdown > .nav-tabs {
+  display: inline-table;
+  max-height: 500px;
+  min-height: 44px;
+  overflow-y: auto;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+}
+
+.tabset-dropdown > .nav-tabs > li.active:before, .tabset-dropdown > .nav-tabs.nav-tabs-open:before {
+  content: "\e259";
+  font-family: 'Glyphicons Halflings';
+  display: inline-block;
+  padding: 10px;
+  border-right: 1px solid #ddd;
+}
+
+.tabset-dropdown > .nav-tabs.nav-tabs-open > li.active:before {
+  content: "\e258";
+  font-family: 'Glyphicons Halflings';
+  border: none;
+}
+
+.tabset-dropdown > .nav-tabs > li.active {
+  display: block;
+}
+
+.tabset-dropdown > .nav-tabs > li > a,
+.tabset-dropdown > .nav-tabs > li > a:focus,
+.tabset-dropdown > .nav-tabs > li > a:hover {
+  border: none;
+  display: inline-block;
+  border-radius: 4px;
+  background-color: transparent;
+}
+
+.tabset-dropdown > .nav-tabs.nav-tabs-open > li {
+  display: block;
+  float: none;
+}
+
+.tabset-dropdown > .nav-tabs > li {
+  display: none;
+}
+</style>
+
+<!-- code folding -->
+
+
+
+
+</head>
+
+<body>
+
+
+<div class="container-fluid main-container">
+
+
+
+
+<div id="header">
+
+
+
+<h1 class="title toc-ignore"><p>生物科学実験II、生物学実験II</p></h1>
+<h3 class="subtitle">種内・種間変異パターンの解析(2025年度高橋プロジェクト)</h3>
+
+</div>
+
+<div id="TOC">
+<ul>
+<li><a href="#%E5%AE%9F%E7%BF%92%E3%81%AE%E7%9B%AE%E7%9A%84"
+id="toc-実習の目的">実習の目的</a></li>
+<li><a href="#%E5%AE%9F%E7%BF%92%E5%AE%9F%E6%96%BD%E4%BA%88%E5%AE%9A"
+id="toc-実習実施予定">実習実施予定</a>
+<ul>
+<li><a href="#%E4%BA%88%E5%AE%9A" id="toc-予定">予定</a></li>
+<li><a
+href="#%E7%94%A8%E3%81%84%E3%82%8B%E9%81%93%E5%85%B7%E3%81%A8%E4%BA%8B%E5%89%8D%E6%BA%96%E5%82%99"
+id="toc-用いる道具と事前準備">用いる道具と事前準備</a>
+<ul>
+<li><a
+href="#r%E3%83%80%E3%82%A6%E3%83%B3%E3%83%AD%E3%83%BC%E3%83%89%E5%85%88"
+id="toc-rダウンロード先">Rダウンロード先</a></li>
+<li><a
+href="#rwindows%E7%89%88%E3%81%AE%E3%82%A4%E3%83%B3%E3%82%B9%E3%83%88%E3%83%BC%E3%83%AB%E6%89%8B%E9%A0%86"
+id="toc-rwindows版のインストール手順">R（Windows版）のインストール手順</a></li>
+</ul></li>
+</ul></li>
+<li><a href="#%E5%9F%BA%E6%9C%AC%E7%9A%84%E6%A6%82%E5%BF%B5"
+id="toc-基本的概念">基本的概念</a></li>
+<li><a
+href="#%E7%AC%AC1%E9%83%A8-%E3%82%B5%E3%83%B3%E3%83%97%E3%83%AB%E3%81%AE%E5%89%8D%E5%87%A6%E7%90%86%E5%BD%A2%E8%B3%AA%E3%81%AE%E5%AE%9A%E9%87%8F%E5%8C%96"
+id="toc-第1部-サンプルの前処理形質の定量化">第1部
+サンプルの前処理、形質の定量化</a>
+<ul>
+<li><a
+href="#%E3%82%B5%E3%83%B3%E3%83%97%E3%83%AB%E3%81%AE%E5%89%8D%E5%87%A6%E7%90%86"
+id="toc-サンプルの前処理">1-1. サンプルの前処理</a>
+<ul>
+<li><a href="#%E7%A8%AE%E5%90%8D%E3%81%AE%E7%A2%BA%E8%AA%8D"
+id="toc-種名の確認">1-1-1. 種名の確認</a></li>
+<li><a
+href="#%E7%94%9F%E6%B4%BB%E6%A7%98%E5%BC%8F%E3%81%AB%E3%82%88%E3%82%8B%E3%82%B0%E3%83%AB%E3%83%BC%E3%83%97%E5%88%86%E3%81%91"
+id="toc-生活様式によるグループ分け">1-1-2.
+生活様式によるグループ分け</a></li>
+<li><a
+href="#%E4%BA%8C%E6%9E%9A%E8%B2%9D%E3%81%AE%E6%96%B9%E4%BD%8D%E3%81%AE%E6%B1%BA%E5%AE%9A"
+id="toc-二枚貝の方位の決定">1-1-3. 二枚貝の方位の決定</a></li>
+<li><a
+href="#%E3%82%B5%E3%83%B3%E3%83%97%E3%83%AB%E3%81%AE%E5%8F%96%E3%82%8A%E6%89%B1%E3%81%84%E6%96%B9"
+id="toc-サンプルの取り扱い方">1-1-4. サンプルの取り扱い方</a></li>
+</ul></li>
+<li><a href="#%E8%A8%88%E6%B8%AC" id="toc-計測">1-2. 計測</a></li>
+</ul></li>
+<li><a
+href="#%E7%AC%AC2%E9%83%A8-%E3%83%87%E3%83%BC%E3%82%BF%E3%81%AE%E9%9B%86%E8%A8%88"
+id="toc-第2部-データの集計">第2部 データの集計</a>
+<ul>
+<li><a
+href="#%E6%B8%AC%E5%AE%9A%E5%80%A4%E3%81%AE%E5%85%A5%E5%8A%9B%E3%81%A8%E5%B9%B3%E5%9D%87%E5%80%A4%E3%81%AE%E7%AE%97%E5%87%BA"
+id="toc-測定値の入力と平均値の算出">2-1.
+測定値の入力と平均値の算出</a></li>
+</ul></li>
+<li><a
+href="#%E7%AC%AC3%E9%83%A8-%E7%A8%AE%E5%86%85%E5%A4%89%E7%95%B0%E3%81%AE%E8%A7%A3%E6%9E%90"
+id="toc-第3部-種内変異の解析">第3部 種内変異の解析</a>
+<ul>
+<li><a
+href="#%E5%A4%89%E9%87%8F%E3%81%AE%E6%AF%94%E3%81%A8%E4%BB%A3%E8%A1%A8%E5%80%A4%E3%81%AE%E7%AE%97%E5%87%BA"
+id="toc-変量の比と代表値の算出">3-1. 変量の比と代表値の算出</a></li>
+<li><a
+href="#%E3%83%87%E3%83%BC%E3%82%BF%E5%88%86%E5%B8%83%E3%81%AE%E8%A6%96%E8%A6%9A%E5%8C%96"
+id="toc-データ分布の視覚化">3-2. データ分布の視覚化</a></li>
+<li><a
+href="#%E6%AD%A3%E8%A6%8F%E5%88%86%E5%B8%83%E3%81%A8%E3%81%AE%E3%81%9A%E3%82%8C%E3%81%AE%E8%A6%96%E8%A6%9A%E5%8C%96"
+id="toc-正規分布とのずれの視覚化">3-3. 正規分布とのずれの視覚化</a></li>
+<li><a href="#%E6%A4%9C%E5%AE%9A%E3%81%A8%E3%81%AF"
+id="toc-検定とは">3-4. 検定とは？</a></li>
+<li><a
+href="#%E5%88%86%E5%B8%83%E3%81%AE%E6%AD%A3%E8%A6%8F%E6%80%A7%E3%81%AE%E6%A4%9C%E5%AE%9A%E3%82%B3%E3%83%AB%E3%83%A2%E3%82%B4%E3%83%AD%E3%83%95%E3%82%B9%E3%83%9F%E3%83%AB%E3%83%8E%E3%83%95%E6%A4%9C%E5%AE%9A"
+id="toc-分布の正規性の検定コルモゴロフスミルノフ検定">3-5.
+分布の正規性の検定（コルモゴロフ–スミルノフ検定）</a></li>
+<li><a
+href="#%E5%B9%B3%E5%9D%87%E5%80%A4%E3%81%AE%E5%B7%AE%E7%95%B0%E3%81%AE%E6%A4%9C%E5%AE%9At%E6%A4%9C%E5%AE%9A"
+id="toc-平均値の差異の検定t検定">3-6.
+平均値の差異の検定（t検定）</a></li>
+</ul></li>
+<li><a
+href="#%E7%AC%AC4%E9%83%A8-%E7%A8%AE%E9%96%93%E5%A4%89%E7%95%B0%E3%81%AE%E8%A7%A3%E6%9E%90"
+id="toc-第4部-種間変異の解析">第4部　種間変異の解析</a>
+<ul>
+<li><a
+href="#%E5%88%86%E6%95%A3%E5%88%86%E6%9E%90%E3%81%A8%E5%A4%9A%E9%87%8D%E6%AF%94%E8%BC%83%E6%B3%95"
+id="toc-分散分析と多重比較法">4-1. 分散分析と多重比較法</a>
+<ul>
+<li><a href="#%E5%88%86%E6%95%A3%E5%88%86%E6%9E%90"
+id="toc-分散分析">4-1-1. 分散分析</a></li>
+<li><a
+href="#%E5%A4%9A%E9%87%8D%E6%AF%94%E8%BC%83%E3%81%A8tukey%E6%A4%9C%E5%AE%9A"
+id="toc-多重比較とtukey検定">4-1-2. 多重比較とTukey検定</a></li>
+<li><a
+href="#%E3%82%A2%E3%83%AB%E3%83%95%E3%82%A1%E3%83%99%E3%83%83%E3%83%88%E3%81%AB%E3%82%88%E3%82%8B%E6%9C%89%E6%84%8F%E5%B7%AE%E3%81%AE%E8%A1%A8%E7%8F%BE"
+id="toc-アルファベットによる有意差の表現">4-1-3.
+アルファベットによる有意差の表現</a></li>
+</ul></li>
+</ul></li>
+</ul>
+</div>
+
+<p><br></p>
+<div id="実習の目的" class="section level1">
+<h1>実習の目的</h1>
+<hr />
+<p>生物個体群の種内・種間の形態変異パターンの解析を体験的に理解、習得することを目的とする。各人に与えられた貝類（二枚貝類）のサンプルについて、観察、計測、集計などの作業を行い、解析の結果をレポートにまとめる。ここでは広く用いられている表計算ソフトである
+<strong>Microsoft
+Excel</strong>と、統計解析用の<strong>フリーソフトR</strong>を用いる。</p>
+<p><strong>Excel</strong>は一般的な表計算ソフトで、データの編集、作図を直感的かつ視覚的に行うことができ、有用な関数が多数利用可能である点が優れているが、その一方で複雑なグラフの作図や統計解析にはあまり向いていない。<strong>R</strong>は基本的な統計解析から先端的な統計解析までをカバーする最も汎用性の高い統計解析ソフトの一つだが、慣れればデータの集計や作図まで、ほぼ全てのデータ解析過程に活用することができる。ただし、データの取り扱いには行列操作が必要になる点や、コマンドラインでの解析の実行は、特に初学者にはハードルが高い。本実習では、この二つのツールを場面によって使い分け、基礎的なデータ解析法を習得することを目標とする。</p>
+<p>生物測定学（biometry）または生物統計学（biostatistics）は、生物の種々の形質、特性を定量的に測定、解析する学問である。
+生物学の
+1分野というよりは、生物科学の諸分野で定量的な資料から客観性の高い結論を得るための普遍的な手段である。その初歩的な考え方と方法を体験的に学ぶ。このような手法の習得は、あらゆる定量的データの科学的処理や実験の計画、さらに実社会での製品の比較や品質管理などの業務に役立つと思われる。</p>
+<p><br></p>
+</div>
+<div id="実習実施予定" class="section level1">
+<h1>実習実施予定</h1>
+<hr />
+<div id="予定" class="section level2">
+<h2>予定</h2>
+<ul>
+<li>第1部
+サンプルの前処理、形質の定量化（計測、集計、計測データ入力）</li>
+<li>第2部 データの集計</li>
+<li>第3部 種内変異の解析</li>
+<li>第4部 種間変異の解析</li>
+</ul>
+</div>
+<div id="用いる道具と事前準備" class="section level2">
+<h2>用いる道具と事前準備</h2>
+<ul>
+<li>電子ノギス（一部の大型種については別途大型のノギスを貸し出す）</li>
+<li>集計用紙</li>
+<li>タックラベル（貝殻の左右、個体識別用）</li>
+<li>補助板（貝殻の厚みの計測用）</li>
+<li>コンピュータ（データ解析用、Windows PCの使用を推奨）</li>
+</ul>
+<p>事前に最新バージョンの<strong>Excel</strong>が動作する様にしておく事（JINDAIアカウントに紐づけられるOffice365を利用して無料でインストールする事ができる）。また、<strong>R</strong>を事前にダウンロード、インストールして、使えるようにしておくこと。Rのダウンロードは以下のリンクより行うこと。Rのインストールは、全てデフォルトの設定で行う。</p>
+<div id="rダウンロード先" class="section level3">
+<h3>Rダウンロード先</h3>
+<p>Windows PC版</p>
+<ul>
+<li><a
+href="https://cran.r-project.org/bin/windows/base/R-4.5.0-win.exe"
+class="uri">https://cran.r-project.org/bin/windows/base/R-4.5.0-win.exe</a></li>
+</ul>
+<p>Mac PC版</p>
+<ul>
+<li><a
+href="https://cran.r-project.org/bin/macosx/big-sur-arm64/base/R-4.5.0-arm64.pkg"
+class="uri">https://cran.r-project.org/bin/macosx/big-sur-arm64/base/R-4.5.0-arm64.pkg</a></li>
+</ul>
+</div>
+<div id="rwindows版のインストール手順" class="section level3">
+<h3>R（Windows版）のインストール手順</h3>
+<p>基本的にはデフォルト設定で、全て「次へ」でOK。 <img
+src="R_install.png" alt="R_install" /></p>
+<p><br> <br></p>
+</div>
+</div>
+</div>
+<div id="基本的概念" class="section level1">
+<h1>基本的概念</h1>
+<hr />
+<p>個体群（population）は生物の生活の基本単位である。遺伝、生態、分類、進化を考究するときにも、同じ場所で繁殖社会をつくっている自然の個体群の性質を認識することが基礎となる。自然界の個体群は一般に全個体を調べることができないから、個体群からランダムに抽出されたサンプル（sample）を解析して個体群の性質を推定する。サンプルは、本来は各人が野外で生態を観察しながら母集団からランダムに抽出するべきものである。しかし、ここでは時間の都合であらかじめ準備したもの（旧金沢研究室所有の二枚貝類標本）を用いる。それぞれのサンプルは同一の産地でランダムに採集されたと考えてよい（他人のサンプルと混合したり、持ち帰ったりしないこと）。各人はそれぞれ別個のサンプルについて、独自に計測データを得て解析する。課題の結果もサンプルによって少しずつ異なる。原則として、種内・種間の形態変異パターンの解析をこのテキストに沿って行う。</p>
+<p><br> <br></p>
+</div>
+<div id="第1部-サンプルの前処理形質の定量化" class="section level1">
+<h1>第1部 サンプルの前処理、形質の定量化</h1>
+<hr />
+<p>形態変異は何らかの形質（character）を対象として解析する。形質にはさまざまなものがあるが、年齢の不揃いなサンプルの変異の解析には成長にともなって変化しにくいものを選ぶ必要がある。例えば、殻の大きさや重量そのものは、成長にともなって次第に増加するから、変異の解析として集計しても意味がないことが多い。これに対して、長さと高さの単純比（simple
+ratio）や相同的な器官の数は、成長にともなって変化しにくいと考えられるため、個体変異を表す形質として扱うことができる。二枚貝の外表にしばしば見られる放射肋(ほうしゃろく)の数は、もし分岐や挿入がなければ、意味のある形質となる。これらは1変量形質（univariate
+character）または2変量の単純比を1変量形質として扱うものである。この他に2変量形質（bivariate
+character）、多変量形質（multivariate character）を解析することもある。
+<br> <br></p>
+<div id="サンプルの前処理" class="section level2">
+<h2>1-1. サンプルの前処理</h2>
+<div id="種名の確認" class="section level3">
+<h3>1-1-1. 種名の確認</h3>
+<p>大部分のサンプルには種名が一応与えてあるが、異なった種が混合していないか各自で確かめること。複数種が混合している可能性がある場合には、種名が正しいか計測終了までに随時インターネットでの検索やスタッフへの確認などで確かめておくこと。また、種名カードが箱に入っていない場合には、インターネット等で種名を検索し、種名の特定を行うこと。属名や種名は図鑑の著者の見解によって異なることがあり、変更されている事もある。</p>
+</div>
+<div id="生活様式によるグループ分け" class="section level3">
+<h3>1-1-2. 生活様式によるグループ分け</h3>
+<p>二枚貝はその生活様式を大まかに次の3種類に分類することが出来る：<strong>①堆積物に潜るタイプ</strong>、<strong>②堆積物の表面で生活するタイプ</strong>、<strong>③基盤に付着するタイプ</strong>。ここでは、①の生活様式を持つ種を<strong>Aグループ</strong>、②と③の生活様式を持つ種をB<strong>グループ</strong>として、自分のサンプルがAとBのどちらの生活様式グループに属するかを以下の図Aを参考にして判定する。</p>
+<p><img src="AB_grouping.png" alt="AB_grouping" /> 図A
+生活様式AグループとBグループの判別方法。</p>
+</div>
+<div id="二枚貝の方位の決定" class="section level3">
+<h3>1-1-3. 二枚貝の方位の決定</h3>
+<p>二枚貝には、前後対称の種はない。ハマグリのようにほぼ左右対称の種が多いが、ホタテガイのように左右非対称の種も少なくない。以下の識別点を参考にして、二枚貝の方位（前後左右）を認識し、左右の殻を区別する。分からない場合にはスタッフに確認する。</p>
+<ol style="list-style-type: decimal">
+<li>通常の
+ハマグリ型の種では、殻頂は中央よりも前方に位置し（例外あり）、後縁が裁断状になる。</li>
+<li>套線湾入(とうせんわんにゅう)（水管を格納するスペース）があれば必ず後側にできる。</li>
+<li>一般に靭帯(じんたい)は殻頂の後側にできる（例外あり）。</li>
+<li>ホタテガイ類では、前方の耳状部がより突出し、前側の閉殻筋(へいかくきん)が退化する。また、一般に左殻の方が色が濃い。</li>
+<li>殻頂を上に、殻の前部を遠方に向けた時、右側の殻が右殻、左側の殻が左殻である。</li>
+<li>前後、左右ともほぼ対称の種もあるが、注意すれば見分けられる。</li>
+</ol>
+</div>
+<div id="サンプルの取り扱い方" class="section level3">
+<h3>1-1-4. サンプルの取り扱い方</h3>
+<ol style="list-style-type: decimal">
+<li>扱うサンプルの個体数（sample
+size）は多いほどよい（誤差が小さくなる）。ここでは20個体（貝殻の総数がそれ以下の場合は全個体）を原則として、時間がある場合には25個体を計測する。種によっては個体数が多いので、その中から20個体をランダムに抽出して用いる</li>
+<li>各個体の外面または内面にタックラベルを貼って番号を書く。貝殻に凹凸が多い場合、外側だと剝がれやすいので、注意すること。貝殻の左右と標本番号を併せて、右殻はR1、R2、R3…、左殻はL1、L2、L3…、のように記す。</li>
+<li>貝の形状に合わせて、測定の基準となる「基線」を定める。前後の閉殻筋痕の中心を結ぶ線や、殻頂部分の直線などが基線の候補となり得る。</li>
+</ol>
+</div>
+</div>
+<div id="計測" class="section level2">
+<h2>1-2. 計測</h2>
+<p>長さ（L）、高さ（H）、厚さ（T）、右殻厚さ（TR）、左殻厚さ（TL）をノギスで計測する。作業を開始する前に、貝の基線とノギスの操作方法を確認しておくこと。ノギスの操作・計測に1つでも誤り（表示値の読み違い、転記ミスなど）があると、以後の作業がすべて無駄になる可能性があるので十分注意すること。先に定めた基線に平行または直交する方向にLとHを測定する（図B）。合弁の個体は、まず殻を合わせた状態でTを計測し、次に右殻と左殻を別々に計測してTR、TLとするのがよい。T=TR+TLにならないことが多いが、それは差し支えない。二枚貝類の殻の厚さはノギスでは測りにくいが、補助板を当てるなど各自で工夫すること。補助板を用いる場合には、補助板の厚みを測定し、後で補助版込みの測定値から差し引くことで補正しておくこと。LとHは左右共通の値として、左右いずれかの殻に決めて測定を行う。計測は独立に2回行って数値を個体ごとに集計用紙に記録する。5個体ずつを一つのブロックにし、5個体についての1回目の計測が終わったら、同じ5個体について2回目の計測を行い、2回の計測が終了した後に、次の5個体のブロックへと進めるようにする。使用しているノギスの精度に応じて、小数点以下１桁もしくは２桁で記録を行う。</p>
+<p><span
+style="color:red">各自に割り振られた貝について、基線の位置、L、H、T、TR、TLの測定位置を写真もしくはイラストにして提出すること（課題１,
+Wordファイル）。</span></p>
+<p><img src="measurement1.png" alt="measurement1" /> 図B
+計測部位の例。L：殻長、H：殻高、TR：右殻厚</p>
+<p><br></p>
+<p><img src="measurement2.png" alt="measurement2" /> 図C
+各部部位の計測方法</p>
+<p><br></p>
+<p>集計用紙の記入例： <img src="measurement3.png"
+alt="measurement3" /></p>
+<p><br> <br></p>
+</div>
+</div>
+<div id="第2部-データの集計" class="section level1">
+<h1>第2部 データの集計</h1>
+<hr />
+<div id="測定値の入力と平均値の算出" class="section level2">
+<h2>2-1. 測定値の入力と平均値の算出</h2>
+<ol style="list-style-type: decimal">
+<li>シート「元データ」には個体番号1-20（20個体分に満たない場合には、ある分だけ）のそれぞれの個体について、各パラメータの測定値２回分を入力する。入力の単位はmmとする。</li>
+<li>2回の反復測定の平均値を算出し、「解析用データ」シートに入力する。</li>
+</ol>
+<p>測定には誤差がつきものであり、多数回の測定を行うことで誤差の影響を低減することができるが大きな労力が必要となる。この実習では2回の測定値を平均することで簡易的に誤差を低減させた値をもとに形態解析を行なう。2回の測定値に大きな違いがある場合には、貝の取違いや、測定部位に誤りがある可能性が非常に高いので、確認をすること。測定に用いるノギスによって、測定精度は1/10mm～１/100mm程度である。使用したノギスの制度に合わせて、Excelのround関数とaverage関数を組み合わせて平均値を1/10mmもしくは1/100mm精度として以降の処理に用いる。</p>
+<hr style="border: 3px solid lightblue;">
+<p><strong>平均値の算出（Excelを使用)</strong> <a
+href="https://youtu.be/j62MejwX500">動画1</a></p>
+<p>「元データ」シートからデータをコピー＆ペーストして、平均値を格納したい表の隣に配置する。その後、average関数を用いて、対応するセル間の平均値を計算する。また、平均値を四捨五入して、小数点以下2桁で表現するために、round関数を使用する。平均化と四捨五入の処理を同時に行うためには、「round(average(○○:○○),2)」（ただし、○○部分は対応するセル）と入力すればよい。関数の使用時には、最初に「＝」の入力を忘れないこと。</p>
+<p><img src="average.png" alt="average" />　</p>
+<hr style="border: 3px solid lightblue;">
+<p><br> <br></p>
+</div>
+</div>
+<div id="第3部-種内変異の解析" class="section level1">
+<h1>第3部 種内変異の解析</h1>
+<hr />
+<p>個体群中の個体は、一般的にそれぞれ異なった遺伝的性質を持ち、少しずつ異なった環境の影響を受けている。そのために、形態的に完全に同一な個体は存在しない。たとえ成長段階が揃っていても、形態は多くの遺伝的要因と環境的要因の相互作用によって支配され、変異（variation）が生じている。単一または少数の遺伝的要因が形態に特別に強い影響を与えるときには不連続変異（例えば、性染色体による雌雄の違いや対立遺伝子による多型現象）も生ずる。単一の個体群中にみられる変異を個体変異（individual
+variation）といい、同一種の異なる個体群間で見られる変異を地理的変異（geographic
+variation）という。この実習で取り扱う貝殻は、基本的に単一の個体群から採集されていると仮定し、形態の種内変異は個体変異であると考える事とする。通常の連続的な個体変異には、遺伝的変異（突然変異に起因する）と環境的変異（遺伝しない変異）の両方が含まれているはずであるが、両者を量的に識別することはこの実習では困難であるため、ここでは両者を区別しない。
+<br> <br></p>
+<div id="変量の比と代表値の算出" class="section level2">
+<h2>3-1. 変量の比と代表値の算出</h2>
+<p>HとL、T、TR、TLの値を2つずつ組み合わせた比（L/H、T/H、TR/H、TL/H）
+を求める。さらに<span
+style="color:red">各形質（2変量の比）について、次の代表値を計算せよ（課題2、Excelファイル）。</span></p>
+<ol style="list-style-type: decimal">
+<li>標本数（<span class="math inline">\(N\)</span>）:<span
+class="math inline">\(N\)</span></li>
+<li>平均値（<span class="math inline">\(\bar{x}\)</span>): <span
+class="math inline">\(\sum \frac{x_i}{N}\)</span></li>
+<li>標準偏差（<span class="math inline">\(s\)</span>）:<span
+class="math inline">\(\sqrt{ \frac{1}{N - 1} \sum (x_i - \bar{x})^2
+}\)</span></li>
+<li>平均値の標準誤差（<span class="math inline">\(s_{\bar{x}}\)</span>
+）:<span class="math inline">\(\frac{s}{\sqrt{N}}\)</span></li>
+<li>変動係数（<span class="math inline">\(V\)</span>）:<span
+class="math inline">\(\frac{100s}{\bar{x}}\)</span></li>
+<li>最小値（<span class="math inline">\(X_{min}\)</span>）</li>
+<li>最大値（<span class="math inline">\(X_{max}\)</span>）</li>
+</ol>
+<p><span class="math inline">\(N\)</span>、<span
+class="math inline">\(\bar{x}\)</span>、<span
+class="math inline">\(s\)</span>はサンプルからの母集団（個体群）の性質の推定や、他のサンプルとの比較
+を行うときに最も基本となる代表値である。</p>
+<hr style="border: 3px solid lightblue;">
+<p><strong>各代表値の計算方法（Excelを使用）</strong> <a
+href="https://youtu.be/Mrxb1z1w0E4">動画2</a></p>
+<ul>
+<li>標本数（<span
+class="math inline">\(N\)</span>）:データ数をカウントする。今回は不要だが、count関数を使うこともできる。</li>
+<li>平均値（<span
+class="math inline">\(\bar{x}\)</span>):：average関数を用いて計算する。</li>
+<li>標準偏差（<span
+class="math inline">\(s\)</span>）：stdev.s関数を使用して計算する。</li>
+<li>平均値の標準誤差（<span class="math inline">\(s_{\bar{x}}\)</span>
+）：sqrt関数を使い、s/sqrt(N)として計算する。</li>
+<li>変動係数（<span
+class="math inline">\(V\)</span>）:平均値と標準偏差を使って計算する。</li>
+<li>最小値（<span
+class="math inline">\(X_{min}\)</span>）：min関数を使って計算する。</li>
+<li>最大値（<span
+class="math inline">\(X_{max}\)</span>）：max関数を使って計算する。</li>
+</ul>
+<hr style="border: 3px solid lightblue;">
+<p>Excel上での計算ミスは、ほとんどの場合入力ミスあるいは関数や数式の誤った使用によって生じる。また、表示桁数が多い事は計算上有利であるが、視認性が悪くなり異常なデータを認識しづらくなる。ここでは視認性を高めるため、小数点以下4桁程度に表示される様にしておく（右クリック→「セルの書式設定」→「数値」→「小数点以下の桁数」、ROUND関数とは異なり、データの実体は変更されない）。</p>
+<p>ノギス測定時には明確な有効数字が存在するので、その後の計算値を示す際の有効数字はそれを基準に定めることになる。手計算や計算尺、電卓の時代とは異なり、計算そのものの煩雑さが問題とならない現代では、後の作業過程に充分以上の桁数を確保しておき、表示値を調整する場合が多い（厳密な有効数字とは対立するが、扱いやすい方法である）。今回は有効桁数を考慮せずに解析を行う。
+<br> <br></p>
+</div>
+<div id="データ分布の視覚化" class="section level2">
+<h2>3-2. データ分布の視覚化</h2>
+<p>生物測定学的研究では、データが正規分布（normal
+distribution）を示すこと（=サンプルが正規分布する母集団からランダムにサンプリングされていること）を前提に議論を進めることが多い。データが正規分布に近いということは、それが単一の種の個体群を代表している可能性が高いことを意味する。一般に、量的形質の分布は正規分布になりやすい。これは、量的形質が効果の小さい複数の遺伝子座（量的形質遺伝子座と呼ぶ）によって支配されていること、環境の影響を受けるとともに、遺伝子型と環境の相互作用が影響してるためと言われている。その一方で、質的形質を支配する遺伝子座は1つまたは少数で、環境の影響をほとんど受けない点で、量的形質と明確に異なっている。</p>
+<p>正規分布は、多数の要因によって支配される生物の量的形質によく現れる分布型である。その認定は以後の統計解析を進める上で重要な前提になる。まずは、ヒストグラム（度数分布図、図D）を作って、サンプルの各形質が正規分布すると見なせるか視覚的に判定する。今回のように単純比のような連続変量を扱うときにはヒストグラムの階級の数を<span
+class="math inline">\(\sqrt{N}\)</span>程度とする（Nはサンプル数）。階級を細かく分け過ぎると偶然性のためにデータの分布を認識しにくくなる。</p>
+<p><img src="histgram.png" width="500"></p>
+<p>図D ヒストグラムの例。</p>
+<p><span
+style="color:red">L/H、T/H、TR/H、TL/Hについてヒストグラムを作成せよ（課題３、Excelファイル）。</span></p>
+<hr style="border: 3px solid lightblue;">
+<p><strong>ヒストグラムの作成方法（ExcelとRを使用）</strong> <a
+href="https://youtu.be/Z7ElcRM9mPI">動画3</a></p>
+<p>Rを起動して、以下のコードをコピー＆ペーストする。</p>
+<pre class="r"><code>data <- read.table("clipboard", header = TRUE)</code></pre>
+<p>＊Macの場合にはこちら：　data&lt;-read.table(pipe(“pbpaste”),header=T)</p>
+<p>次に、Excel上でL/H、T/H、TR/H、TL/Hの行列全体をコピーする（ただし、ペーストはしない）。</p>
+<p><img src="copy1.png" style="width:500px;" /></p>
+<p>その後で、R上で先ほどのコードを実行（enterキーを押す）することで、Ｒ上でdataにデータ行列が格納される。データの格納に成功した場合には、以下のコードでデータ行列の最初の６行が表示される。</p>
+<pre class="r"><code>head(data)</code></pre>
+<pre><code>##      L.H    T.H   TR.H   TL.H
+## 1 1.0163 0.2562 0.1613 0.1300
+## 2 0.9796 0.2447 0.1475 0.1101
+## 3 0.9791 0.2334 0.1313 0.1089
+## 4 0.9702 0.2432 0.1303 0.1126
+## 5 1.0270 0.2617 0.1485 0.1376
+## 6 0.9823 0.2619 0.1428 0.1288</code></pre>
+<p>R上では、列名の「/」は「.」に自動的に変換される。ヒストグラムはhist関数を用いて描画する。L/H、T/H、TR/H、TL/Hのヒストグラムの描画には、以下のコードを用いる。</p>
+<pre class="r"><code># L/H(結果を例示)
+hist(data$L.H, xlab=&quot;L/H&quot;, ylab=&quot;頻度&quot;, main=&quot;&quot;) </code></pre>
+<p><img src="FY2025ShellExp_files/figure-html/unnamed-chunk-3-1.png" width="672" /></p>
+<pre class="r"><code># T/H
+hist(data$T.H, xlab=&quot;T/H&quot;, ylab=&quot;頻度&quot;, main=&quot;&quot;) </code></pre>
+<pre class="r"><code># TR/H
+hist(data$TR.H, xlab=&quot;TR/H&quot;, ylab=&quot;頻度&quot;, main=&quot;&quot;) </code></pre>
+<pre class="r"><code># TL/H 
+hist(data$TL.H, xlab=&quot;TL/H&quot;, ylab=&quot;頻度&quot;, main=&quot;&quot;)</code></pre>
+<p>＊Macで漢字が文字化けする場合には、”頻度”を”frequency”に置き換える。</p>
+<p>コードを実行して得られたヒストグラムのグラフ上で右クリックをして、グラフを「メタファイルにコピー」する。＊Macの場合には、やや方法が異なる。</p>
+<p><img src="hist_copy1.png" style="width:500px;" /></p>
+その後、Excel上の「ヒストグラム」シート上の指定の位置に貼り付ける。
+<img src="hist_copy2.png" style="width:600px;" />
+<hr style="border: 3px solid lightblue;">
+<p><span
+style="color:red">ヒストグラムを眺めて、正現分布になりそうかどうか推測せよ（課題4、Wordファイル）。</span>また、サンプルの中に他と大きく異なった個体がないか、もしあればその個体を他と同一の種と見なせるか、改めてその個体に戻って他の形質と関連があるか検討せよ。ここで計測や計算の誤りが見つかるかも知れない。</p>
+<p><span
+style="color:red">hist関数に引数nclassを追加して、階級数を変化させたときのグラフも2つ追加し、階級数がヒストグラムの見た目に与える影響についても考察せよ（追加課題1と2、Excelファイル）。</span>この時、ヒストグラム描画に使用するデータはL/H、T/H、TR/H、TL/Hのいずれでも構わない。また、指定する階級数も自由に設定して構わない。ただし、使用したデータと階級数をExcelシートに記載すること。
+<br> <br></p>
+</div>
+<div id="正規分布とのずれの視覚化" class="section level2">
+<h2>3-3. 正規分布とのずれの視覚化</h2>
+<p>正規分布はヒストグラムを見て直観的に判断することもあるが、もう少し理論的に厳密に確認する必要がある。特に個体数が比較的少ない場合には正規分布になるか判定しにくいことが多い。一つの方法として考えられるのは、母集団が正規分布であると仮定したときの理論的な度数分布と実際の観測度数分布を総合的に比較することである。<span
+style="color:red">ヒストグラムに観測値から算出した平均値と標準偏差を持つ正規分布を上書きし、正規分布とのずれを視覚化する（課題5、Excelファイル）。</span></p>
+<hr style="border: 3px solid lightblue;">
+<p><strong>ヒストグラムへの正規分布の上書き（Rを使用）</strong> <a
+href="https://youtu.be/z6HIPtrSim8">動画4</a></p>
+<p>先ほどと同様に、Ｒ上でdataにデータ行列を格納する。ヒストグラムはhist関数を用いて描画し、正規分布はcurve関数を用いる。描画には、以下のコードを用いる。</p>
+<pre class="r"><code># L/H(結果を例示)
+hist(data$L.H,xlab=&quot;L/H&quot;,ylab=&quot;確率密度&quot;,main=&quot;&quot;,freq=F) 
+curve(dnorm(x,mean(data$L.H),sd(data$L.H)),add=TRUE,col=&quot;red&quot;)</code></pre>
+<p><img src="FY2025ShellExp_files/figure-html/unnamed-chunk-5-1.png" width="672" /></p>
+<pre class="r"><code># T/H
+hist(data$T.H,xlab=&quot;T/H&quot;,ylab=&quot;確率密度&quot;,main=&quot;&quot;, freq=F) 
+curve(dnorm(x,mean(data$T.H),sd(data$T.H)),add=TRUE,col=&quot;red&quot;)</code></pre>
+<pre class="r"><code># TR/H
+hist(data$TR.H,xlab=&quot;TR/H&quot;,ylab=&quot;確率密度&quot;,main=&quot;&quot;, freq=F) 
+curve(dnorm(x,mean(data$TR.H),sd(data$TR.H)),add=TRUE,col=&quot;red&quot;)</code></pre>
+<pre class="r"><code># TL/H 
+hist(data$TL.H,xlab=&quot;TL/H&quot;,ylab=&quot;確率密度&quot;,main=&quot;&quot;, freq=F) 
+curve(dnorm(x,mean(data$TL.H),sd(data$TL.H)),add=TRUE,col=&quot;red&quot;)</code></pre>
+<p>＊確率密度とは、確率変数の取りうる値に対して、その発生する確率を表したもの。確率変数の範囲全体での積分値が1となる。</p>
+<p>＊Macで漢字が文字化けする場合には、”確率密度”を”density”に置き換える。</p>
+<p>コードを実行して得られたヒストグラムのグラフ上で右クリックをして、グラフを「メタファイルにコピー」し、Excel上の「正規性」シート上の指定の位置に貼り付ける。＊Macの場合には、やや方法が異なる。</p>
+<p><img src="hist_copy3.png" style="width:500px;" /> <br> <br></p>
+</div>
+<div id="検定とは" class="section level2">
+<h2>3-4. 検定とは？</h2>
+<p>一般に、統計学の検定は次のような考え方で行われる（どの検定でも共通）。</p>
+<ol style="list-style-type: decimal">
+<li><strong>帰無仮説（<span
+class="math inline">\(H_0\)</span>）を立てる</strong><br />
+</li>
+</ol>
+<ul>
+<li>「母集団は正規分布する」や「2つの母集団の平均値には差がない」のような唯一の状態（<span
+class="math inline">\(H_0\)</span>）を仮定する。逆に、「正規分布でない」や「平均値に差がある」のような仮説には無限の可能性があり、帰無仮説には適さない。</li>
+</ul>
+<ol start="2" style="list-style-type: decimal">
+<li><strong><span
+class="math inline">\(H_0\)</span>が成り立つ確率（P値）を求める</strong></li>
+</ol>
+<ul>
+<li>適切な統計手法に従って、データが帰無仮説のもとで得られる確率を計算する。</li>
+</ul>
+<ol start="3" style="list-style-type: decimal">
+<li><strong>P値に基づいて判断する</strong></li>
+</ol>
+<ul>
+<li>P &lt; 0.05 の場合：<span
+class="math inline">\(H_0\)</span>の正当性が疑われる ⇒
+H₀を棄却し、対立仮説を採択する</li>
+<li>P ≥ 0.05 の場合：<span
+class="math inline">\(H_0\)</span>の正当性を疑う根拠がない ⇒ <span
+class="math inline">\(H_0\)</span>を採択する（ただし、H₀が正しいと断定するわけではない）
+<br> <br></li>
+</ul>
+</div>
+<div id="分布の正規性の検定コルモゴロフスミルノフ検定"
+class="section level2">
+<h2>3-5. 分布の正規性の検定（コルモゴロフ–スミルノフ検定）</h2>
+<p>旧ソビエト連邦の数学者 Andrey Nikolaevich KolmogorovとNikolai
+Vasilyevich Smirnov
+によって開発された<strong>コルモゴロフ–スミルノフ検定（KS検定）</strong>は適合度検定の一つで、二つの頻度分布の差を検定することができる。正規性の検定に用いる場合には、一つは観測分布、もう一つは期待分布（正規分布を仮定した場合の期待値）を用いる。観測値の累積確率分布と正規分布の累積確率の差の絶対値の最大値Dを検定統計量とし検定を行う（図E）。</p>
+<p><img src="KS_test.png" style="width:500px;" /></p>
+<p>図E 観測値の累積確率分布と正規分布の累積確率の差の絶対値</p>
+<p>KS検定によって正規性の検定を行い、P値が0.05を下回った場合には、帰無仮説（＝観測値は正規分布する）を棄却して、正規分布からずれていると結論する。L/H、T/H、TR/H、TL/Hについて、<span
+style="color:red">データの分布が正規分布からずれているかどうかを、KS検定によって検定し、P値をエクセルファイルに記入せよ（課題6、Excelファイル）。また、L/H、T/H、TR/H、TL/Hについて、KS検定の結果に基づいて、正規分布からのずれについての解釈と、その根拠を記述せよ（課題7、Wordファイル）。</span></p>
+<hr style="border: 3px solid lightblue;">
+<p><strong>KS検定を用いた正規性の検定（Rを使用）</strong> <a
+href="https://youtu.be/sn7ncrZeqh0">動画5</a></p>
+<p>先ほどと同様に、Ｒ上でdataにデータ行列を格納する。KS検定には、以下のコードを用いる。</p>
+<pre class="r"><code># L/H(結果を例示)
+ks.test(data$L.H, &quot;pnorm&quot;, mean=mean(data$L.H), sd=sd(data$L.H))</code></pre>
+<pre><code>## 
+##  Exact one-sample Kolmogorov-Smirnov test
+## 
+## data:  data$L.H
+## D = 0.15955, p-value = 0.498
+## alternative hypothesis: two-sided</code></pre>
+<pre class="r"><code>#T/H
+ks.test(data$T.H, &quot;pnorm&quot;, mean=mean(data$T.H), sd=sd(data$T.H))
+#TR/H
+ks.test(data$TR.H, &quot;pnorm&quot;, mean=mean(data$TR.H), sd=sd(data$TR.H))
+#TL/H
+ks.test(data$TL.H, &quot;pnorm&quot;, mean=mean(data$TL.H), sd=sd(data$TL.H))</code></pre>
+<p>コードを実行すると以下のような結果得られる。p-valueの値をコピーして、「正規性」シートの該当箇所（「KS検定　P=」の部分に貼り付ける。</p>
+<p>＊データ中に同じ数値（同順位の値）が存在していると、” ties should not
+be present for the one-sample Kolmogorov-Smirnov
+test“というエラーメッセージが表示されるが、ここでは気にせずに検定を行う。</p>
+<hr style="border: 3px solid lightblue;">
+<p><br> <br></p>
+</div>
+<div id="平均値の差異の検定t検定" class="section level2">
+<h2>3-6. 平均値の差異の検定（t検定）</h2>
+<p>2つのサンプルのある量的形質の平均値には一般に多少の差異がある。その差異が意味のあるものかどうか（つまり2つの母集団での平均値が等しいかどうか）を統計学的に明らかにするために利用されるのがt検定である。ここでは、実際にt検定を行って左右の殻の膨らみ（TR/HとTL/H）の平均値に有意の差があるかどうか（左右の殻の膨らみに差があるかどうか）を統計学的に判定する。t検定は個体数が少なくても適用できるが、2つのサンプルの変量が共に正規分布することが前提となるので、事前にKS検定で正規分布を確かめておくこと。ただし、今回は実習であるから「正規分布ではない」という結果が得られた場合にもt検定を行うこと（その旨はレポートに明記しておくこと）。</p>
+<p>2つのサンプルの平均値を<span
+class="math inline">\(\bar{x}_1\)</span>、<span
+class="math inline">\(\bar{x}_2\)</span>、標準偏差を<span
+class="math inline">\(s_1\)</span>、<span
+class="math inline">\(s_2\)</span>、個体数を<span
+class="math inline">\(N_1\)</span>、<span
+class="math inline">\(N_2\)</span>とすると、次の式で<span
+class="math inline">\(t\)</span>値が求められる。</p>
+<p><span class="math display">\[
+t = \frac{(\bar{x}_1 - \bar{x}_2) \sqrt{\frac{N_1 N_2}{N_1 + N_2}}}
+         {\sqrt{ \frac{(N_1 - 1) s_1^2 + (N_2 - 1) s_2^2}{N_1 + N_2 - 2}
+}}
+\]</span> この<span
+class="math inline">\(t\)</span>値から、帰無仮説（<span
+class="math inline">\(H_0\)</span>:<span
+class="math inline">\(μ_1\)</span>=<span
+class="math inline">\(μ_2\)</span>）が成り立つ確率（P）を知ることができる。P&gt;0.05であれば、「平均値の差異が有意であるとはいえない」、P&lt;0.05であれば「平均値の差異は有意である」という結論に達する。</p>
+<p><span
+style="color:red">TR/HとTL/Hについて、平均値±標準誤差の棒グラフを作成し、その差をt検定で検定せよ（課題8、Excelファイル）。また、その解釈を記述せよ（課題9、Wordファイル）。</span></p>
+<hr style="border: 3px solid lightblue;">
+<p><strong>棒グラフ（エラーバーつき）の作図</strong> <a
+href="https://youtu.be/8i6DNJh4-7E">動画6</a></p>
+<p>「変量の比と代表値」シートのTR/HとTL/Hの平均値を選択した状態で、Excelで「挿入」タブから、棒グラフを選択する。
+<img src="bar1.png" style="width:400px;" /> <br> <br>
+出現したグラフエリアを右クリックし、「データの選択」を選び、「横（項目）軸ラベル（C）」の編集タブをクリック。</p>
+<p><img src="bar2.png" style="width:400px;" /> <br> <br>
+「軸ラベルの範囲（A）：」の上矢印をクリックし、TR/HとTL/Hを選択する。</p>
+<p><img src="bar3.png" style="width:400px;" /> <br> <br>
+横軸のラベルが設定できたら、誤差範囲の設定を行う。グラフエリアの右上の「＋」アイコン、その後「誤差範囲」をクリックする。</p>
+<p><img src="bar4.png" style="width:500px;" /> <br> <br>
+ここで表示されるエラーバーは誤差として不適切なので、どちらかのエラーバーを右クリックして、「誤差範囲の書式設定（E）」を選択する。</p>
+<p><img src="bar5.png" style="width:500px;" /> <br> <br>
+ここで表示される誤差範囲の中から、「ユーザー設定（C）」を選び、値を指定する。</p>
+<p><img src="bar6.png" style="width:400px;" /> <br> <br>
+正の誤差の値、負の誤差の値のいずれにもTR/HとTL/Hの標準誤差を指定する。</p>
+<p><img src="bar7.png" style="width:400px;" /> <br> <br>
+自分で算出した標準誤差を、以下のように選択する。</p>
+<p><img src="bar8.png" style="width:600px;" /> <br> <br>
+得られたグラフを「平均値の検定」シートの枠内にカット＆ペーストする。時間があれば、縦軸の追加や、枠線の削除など、グラフの見た目をきれいにする処置を行ってもよい。</p>
+<p><img src="bar9.png" style="width:400px;" /> <br> <br></p>
+<hr style="border: 3px solid lightblue;">
+<p><strong>t検定</strong> <a
+href="https://youtu.be/sFcQldbuDOk">動画7</a></p>
+<p>これまでと同様に、Ｒ上でdataにデータ行列を格納する。t検定には、以下のコードを用いる。</p>
+<pre class="r"><code>t.test(data$TR.H, data$TL.H)</code></pre>
+<pre><code>## 
+##  Welch Two Sample t-test
+## 
+## data:  data$TR.H and data$TL.H
+## t = 8.6032, df = 47.964, p-value = 2.759e-11
+## alternative hypothesis: true difference in means is not equal to 0
+## 95 percent confidence interval:
+##  0.03361548 0.05412052
+## sample estimates:
+## mean of x mean of y 
+##  0.157680  0.113812</code></pre>
+<p>得られた結果から、p-valueの値をコピーして、「平均値の検定」シートの該当箇所（「t検定　P=」の部分）に貼り付ける。例えば、P=2.796e-11（e-11は、<span
+class="math inline">\(10^{-11}\)</span>の意味）のような表記になっている場合でも、そのまま貼り付けて良い。出力で「p-value
+&lt;」と表示されている場合には、エクセルファイルの「P＝」部分を「P＜」に改変する。</p>
+<hr style="border: 3px solid lightblue;">
+<p><br> <br></p>
+</div>
+</div>
+<div id="第4部-種間変異の解析" class="section level1">
+<h1>第4部　種間変異の解析</h1>
+<hr />
+<p>生物の種間変異とは、異なる種や亜種間で生じる遺伝的な差異のことで、生物の生息環境の違いもその差に寄与することがある。二枚貝はその生活様式を大まかに次の3種類に分類することが出来る：①堆積物に潜るタイプ、②堆積物の表面で生活するタイプ、③基盤に付着するタイプ。ここでは、①の生活様式を持つ種をAグループ、②と③の生活様式を持つ種をBグループとして、AとB二つのグループ間に分類し、形態の種間変異についての解析を行う事で、生活様式と形態の関係性について考察を行う。</p>
+<hr style="border: 3px solid lightblue;">
+<p><strong>解析用まとめデータセットの作成</strong> <a
+href="">動画</a></p>
+<p>まず、自分のデータの、「変量の比と代表値」のシートから、L/H、T/Hをコピーし、「解析用まとめデータ」シートの対応する場所にペーストする。</p>
+<p><img src="intersp_data1.png" style="width:400px;" /> <br> <br></p>
+<p>次に、「変量の比と代表値」のシートで左右の殻厚の違いの指標として、(TR-TL)÷(TRとTLの平均値)を計算して、コピーする。</p>
+<p><img src="intersp_data2.png" style="width:500px;" /> <br> <br></p>
+<p>コピーしたデータを、「解析用まとめデータ」シートの「(TR-TL)/mean」に<b><u>値で貼り付ける</u></b>。</p>
+<p><img src="intersp_data3.png" style="width:500px;" /> <br> <br></p>
+<p>「解析用まとめデータ」シートのHabitat_typeに適切な生活様式（AまたはB）を記入する。Sp_codeは種名コードの意味で、属名と種小名の頭文字を合わせて作成し、記入する。例えば、<i>Patinopecten
+yessoensis</i>であれば、Pyとする。</p>
+<p><img src="intersp_data4.png" style="width:400px;" /> <br> <br></p>
+<p>次に、WebClassの「解析用データ」から、リンクをたどり、以下の6種分のデータをダウンロードする。</p>
+<p>＊解析用データ A_Anadara granosa.xlsx、A_Meretrix
+meretrix.xlsx、A_Scapharca subcrerate.xlsx、B_Argopecten
+irradians.xlsx、B_Chlamys larvata.xlsx、B_Comptopallium radula.xlsx</p>
+<p>A_…で始まるデータは生活様式Aグループ、B_…で始まるデータは生活様式Bグループに属する種のものである。自分が計測した種がAグループに属する場合は、自分で測定したデータに加えて、自分が測定したものとは異なる2種分のAグループのデータとBグループ3種分のデータを用いる。自分が計測した種がBグループに属する場合は、自分で測定したデータに加えて、自分が測定したものとは異なる2種分のBグループのデータとAグループ3種分のデータを用いる。</p>
+<p>各種のデータを、「解析用まとめデータ」シートの自分のデータの下にコピー＆ペーストする。全てのデータを貼り付けたら、「(TR-TL)/mean」となっている列名をDA（＊Directional
+Asymmetry、方向性のある左右非対称性の意味）に置き換えて、データセットを完成させる。</p>
+<p><img src="intersp_data5.png" style="width:400px;" /> <br> <br></p>
+<div id="分散分析と多重比較法" class="section level2">
+<h2>4-1. 分散分析と多重比較法</h2>
+<div id="分散分析" class="section level3">
+<h3>4-1-1. 分散分析</h3>
+<p><strong>分散分析（ANOVA）</strong> は、複数のグループの
+<strong>平均値に差があるか</strong>
+を調べる統計手法で、特に、<strong>3つ以上のグループ</strong>を比較する場合によく使われる。</p>
+<p>この方法では、データをグループごとに分類し、以下の2つのばらつきを比較する。</p>
+<ul>
+<li><strong>グループ内の変動</strong>：同じグループ内の個体のばらつき</li>
+<li><strong>グループ間の変動</strong>：グループ間の平均値の差</li>
+</ul>
+<p>ばらつきの差が大きいほど、平均値の差が統計的に有意である可能性が高くなる。</p>
+<p>手順は以下のとおり：</p>
+<ol style="list-style-type: decimal">
+<li><strong>全変動</strong>（全体のばらつき）を求める<br />
+</li>
+<li>それを <strong>グループ内変動</strong> と
+<strong>グループ間変動</strong> に分ける<br />
+</li>
+<li>両者の比から <strong>F値</strong> を算出する<br />
+</li>
+<li>F値を用いて、帰無仮説（グループ間の平均値に差がない）を検定する</li>
+</ol>
+</div>
+<div id="多重比較とtukey検定" class="section level3">
+<h3>4-1-2. 多重比較とTukey検定</h3>
+<p><strong>多重比較法</strong>
+は、複数のグループをペアで比較する際に用いられる。このとき問題になるのが
+<strong>第1種の過誤（Type I
+error）</strong>、すなわち「誤って帰無仮説を棄却してしまうこと」。</p>
+<p>そのリスクを抑える方法のひとつが
+<strong>Tukey検定</strong>。これは、分散分析の後に行い、<strong>各グループ間の平均値の差</strong>が有意かどうかを調べるのに使われる。</p>
+</div>
+<div id="アルファベットによる有意差の表現" class="section level3">
+<h3>4-1-3. アルファベットによる有意差の表現</h3>
+<p>Tukey検定などの結果は、次のように <strong>アルファベット記号</strong>
+を使って表現することがある：</p>
+<ul>
+<li><strong>同じアルファベット</strong> → 統計的に有意な差がない</li>
+<li><strong>異なるアルファベット</strong> → 有意な差がある</li>
+</ul>
+<p>この記法は、視覚的に結果をわかりやすく示すためのもの。</p>
+<p><span
+style="color:red">L/HとDAについて、6種間で平均値に違いがあるかどうかを、分散分析とTukey検定を用いて解析せよ。また、平均値±標準誤差の棒グラフを作成し、種間のペアワイズ比較の結果をアルファベットで示せ（課題10、Excelファイル）。さらに、その結果の生態学的な解釈を記述せよ（課題11、Wordファイル）。</span></p>
+<hr style="border: 3px solid lightblue;">
+<p><strong>分散分析</strong> <a href="">動画</a></p>
+<p>これまでと同様に、「解析用まとめデータ」シートのデータ行列を格納する。データの読み込みには、以下のコードを用いる。</p>
+<pre class="r"><code>data <- read.table("clipboard", header = TRUE)</code></pre>
+<p>＊Macの場合にはこちら：　data&lt;-read.table(pipe(“pbpaste”),header=T)</p>
+<p><img src="habitat_data.png" style="width:500px;" /> <br> <br></p>
+<p>種名と生活様式グループの対応が分かりやすくなるように、新しい変数を作成する。</p>
+<pre class="r"><code>group&lt;-as.factor(paste(data$Habitat_type,&quot;_&quot;,data$Sp_code))
+data&lt;-data.frame(data,group)</code></pre>
+<p>このデータセットを用いて分散分析を実行する。</p>
+<pre class="r"><code>#L/H(結果を例示)
+model&lt;-aov(L.H~group,data=data)
+summary(model)</code></pre>
+<pre><code>##              Df Sum Sq Mean Sq F value Pr(&gt;F)    
+## group         5 2.8747  0.5749   335.9 &lt;2e-16 ***
+## Residuals   144 0.2465  0.0017                   
+## ---
+## Signif. codes:  0 &#39;***&#39; 0.001 &#39;**&#39; 0.01 &#39;*&#39; 0.05 &#39;.&#39; 0.1 &#39; &#39; 1</code></pre>
+<pre class="r"><code>#DA
+model2&lt;-aov(DA~group,data=data)
+summary(model2)</code></pre>
+<p>得られた結果のp-valueの値をコピーして、「分散分析の結果」シートの該当箇所（「分散分析　P=」）の部分に貼り付ける。</p>
+<hr style="border: 3px solid lightblue;">
+<p><strong>棒グラフ（エラーバーつき）の作図（Rを用いるバージョン）</strong>
+<a href="">動画</a></p>
+<p>tapply関数を用いて、平均値、標準偏差、標本数を算出し、標準誤差（SE:
+Standard Error）を計算する。</p>
+<pre class="r"><code>#L/H
+m_L.H&lt;-tapply(data$L.H, list(data$group), mean) #平均値
+sd_L.H&lt;-tapply(data$L.H, list(data$group), sd) #標準偏差
+N_L.H&lt;-tapply(data$L.H, list(data$group), length) #標本数
+SE_L.H&lt;-sd_L.H/sqrt(N_L.H) #標準誤差
+#DA
+m_DA&lt;-tapply(data$DA, list(data$group), mean) #平均値
+sd_DA&lt;-tapply(data$DA, list(data$group), sd) #標準偏差
+N_DA&lt;-tapply(data$DA, list(data$group), length) #標本数
+SE_DA&lt;-sd_DA/sqrt(N_DA) #標準誤差</code></pre>
+<p>次に、平均値とSEを用いてエラーバー付き棒グラフを作図する。</p>
+<pre class="r"><code>#L/H(結果を例示)
+BP_L.H&lt;-barplot(m_L.H, ylim=c(0, max(m_L.H)*1.5))
+arrows(BP_L.H,m_L.H+SE_L.H,BP_L.H,m_L.H-SE_L.H,code=3,angle=90,lwd=1,length=0.1)
+box(lty=1)</code></pre>
+<p><img src="FY2025ShellExp_files/figure-html/unnamed-chunk-15-1.png" width="672" /></p>
+<pre class="r"><code>#DA
+BP_DA&lt;-barplot(m_DA, ylim=c(min(m_DA)*1.5, max(m_DA)*1.5))
+arrows(BP_DA,m_DA+SE_DA,BP_DA,m_DA-SE_DA,code=3,angle=90,lwd=1,length=0.1)
+box(lty=1)</code></pre>
+<p>コードを実行して得られた棒グラフを「分散分析の結果」シートの該当箇所に貼り付ける。</p>
+<hr style="border: 3px solid lightblue;">
+<p><strong>Tukey検定</strong> <a href="">動画</a></p>
+<p>Tukey検定を行うために、multcompパッケージのインストールを行う。</p>
+<p>Rのウィンドウ上部の「パッケージ」から「パッケージのインストール」と進む。</p>
+<p><img src="tukey1.png" style="width:500px;" /> <br> <br></p>
+<p>「Secure CRAN
+mirrors」からJapan（Tokyo）を選択し、「Packages」から「multcomp」を選して、インストールする。</p>
+<p><img src="tukey2.png" style="width:400px;" /> <br> <br></p>
+<p>このmulticompを用いて、Tukey検定を実行する。</p>
+<pre class="r"><code>library(multcomp)#使用するパッケージの読み込み</code></pre>
+<pre class="r"><code>#L/H(結果を例示)
+L.H_res&lt;-glht(model,linfct=mcp(group=&quot;Tukey&quot;)) 
+summary(L.H_res)</code></pre>
+<pre><code>## 
+##   Simultaneous Tests for General Linear Hypotheses
+## 
+## Multiple Comparisons of Means: Tukey Contrasts
+## 
+## 
+## Fit: aov(formula = L.H ~ group, data = data)
+## 
+## Linear Hypotheses:
+##                       Estimate Std. Error t value Pr(&gt;|t|)    
+## A _ Py - A _ Mm == 0 -0.164416   0.011701 -14.051  &lt; 1e-04 ***
+## A _ Ss - A _ Mm == 0  0.129640   0.011701  11.079  &lt; 1e-04 ***
+## B _ Ai - A _ Mm == 0 -0.109892   0.011701  -9.391  &lt; 1e-04 ***
+## B _ Cl - A _ Mm == 0 -0.259144   0.011701 -22.147  &lt; 1e-04 ***
+## B _ Cr - A _ Mm == 0 -0.252336   0.011701 -21.565  &lt; 1e-04 ***
+## A _ Ss - A _ Py == 0  0.294056   0.011701  25.130  &lt; 1e-04 ***
+## B _ Ai - A _ Py == 0  0.054524   0.011701   4.660 0.000133 ***
+## B _ Cl - A _ Py == 0 -0.094728   0.011701  -8.096  &lt; 1e-04 ***
+## B _ Cr - A _ Py == 0 -0.087920   0.011701  -7.514  &lt; 1e-04 ***
+## B _ Ai - A _ Ss == 0 -0.239532   0.011701 -20.471  &lt; 1e-04 ***
+## B _ Cl - A _ Ss == 0 -0.388784   0.011701 -33.226  &lt; 1e-04 ***
+## B _ Cr - A _ Ss == 0 -0.381976   0.011701 -32.644  &lt; 1e-04 ***
+## B _ Cl - B _ Ai == 0 -0.149252   0.011701 -12.755  &lt; 1e-04 ***
+## B _ Cr - B _ Ai == 0 -0.142444   0.011701 -12.173  &lt; 1e-04 ***
+## B _ Cr - B _ Cl == 0  0.006808   0.011701   0.582 0.992093    
+## ---
+## Signif. codes:  0 &#39;***&#39; 0.001 &#39;**&#39; 0.01 &#39;*&#39; 0.05 &#39;.&#39; 0.1 &#39; &#39; 1
+## (Adjusted p values reported -- single-step method)</code></pre>
+<pre class="r"><code>cld(L.H_res)</code></pre>
+<pre><code>## A _ Mm A _ Py A _ Ss B _ Ai B _ Cl B _ Cr 
+##    &quot;a&quot;    &quot;b&quot;    &quot;c&quot;    &quot;d&quot;    &quot;e&quot;    &quot;e&quot;</code></pre>
+<pre class="r"><code>#DA
+DA_res&lt;-glht(model2,linfct=mcp(group=&quot;Tukey&quot;)) 
+summary(DA_res)
+cld(DA_res)</code></pre>
+<p>ペアワイズ比較の結果のアルファベット表記が得られる。</p>
+<p>これを「分散分析の結果」シートの対応する棒グラフにテキストファイルで書き込む。</p>
+<p><img src="tukey3.png" style="width:600px;" /> <br> <br></p>
+<p><span style="color:red">[追加課題3、Excelファイル]</span>
+上記の解析コードを適宜改変して、T/Hについても同様の解析・作図を行ってみること。</p>
+<p><span
+style="color:red"><b><u>＊生物科学実験IIの履修者は必須の課題とする。</b></u></span></p>
+<p><span style="color:red">[追加課題4、Excelファイル]</span>
+本実習のデータを用いて、本実習で描いたグラフ（ヒストグラム、棒グラフ）以外のグラフを２つ自由に描くこと。Excelを用いてもRを用いても良いが、描画結果はExcelファイルに貼り付けること。また、縦横軸のラベルを忘れずにつけること。</p>
+<p><span
+style="color:red"><b><u>＊生物科学実験IIの履修者は必須の課題とする。</b></u></span></p>
+</div>
+</div>
+</div>
+
+
+
+
+</div>
+
+<script>
+
+// add bootstrap table styles to pandoc tables
+function bootstrapStylePandocTables() {
+  $('tr.odd').parent('tbody').parent('table').addClass('table table-condensed');
+}
+$(document).ready(function () {
+  bootstrapStylePandocTables();
+});
+
+
+</script>
+
+<!-- tabsets -->
+
+<script>
+$(document).ready(function () {
+  window.buildTabsets("TOC");
+});
+
+$(document).ready(function () {
+  $('.tabset-dropdown > .nav-tabs > li').click(function () {
+    $(this).parent().toggleClass('nav-tabs-open');
+  });
+});
+</script>
+
+<!-- code folding -->
+
+
+<!-- dynamically load mathjax for compatibility with self-contained -->
+<script>
+  (function () {
+    var script = document.createElement("script");
+    script.type = "text/javascript";
+    script.src  = "https://mathjax.rstudio.com/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML";
+    document.getElementsByTagName("head")[0].appendChild(script);
+  })();
+</script>
+
+</body>
+</html>
